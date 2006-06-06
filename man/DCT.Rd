@@ -43,7 +43,9 @@ DCT(data, inv = T)
 \references{ K. Rao and P. Yip, Discrete cosine transform : algorithms,
   advantages, applications, Academic Press, Boston, MA, 1990. }
 \author{Catherine Watson }
-\seealso{ \code{\link{applyDCT}} }
+\seealso{ \code{\link{applyDCT}} 
+\code{\link{dct}}
+}
 
 \examples{
 # inverse transform should be the identity transform 
