@@ -1,5 +1,5 @@
 "dct" <-
-function(wav, fit=F,  k=NULL)
+function(wav, fit=FALSE,  k=NULL)
 {
 
 if(!is.vector(wav) & !is.matrix(wav) )
@@ -22,7 +22,7 @@ stop("k must be between 2 and the length of the input signal")
 # program begins here
 wav <- c(wav, rev(wav[-c(1, N)]))
 Nref <- length(wav)
-coeff <- Re(fft(wav, inverse=T))/Nref
+coeff <- Re(fft(wav, inverse=TRUE))/Nref
 
 if(fit)
 {
@@ -30,7 +30,7 @@ p <- 1:k
 r <- c(Nref: (Nref-k+2))
 p <- c(p, r)
 coeff[-p] <- 0
-coeff <- Re(fft(coeff, inverse=T))
+coeff <- Re(fft(coeff, inverse=TRUE))
 }
 coeff <-coeff[1:N]
 names(coeff) <- nz
