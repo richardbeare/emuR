@@ -1,16 +1,16 @@
-\name{is.seglist}
-\alias{is.seglist}
+\name{mel.default}
+\alias{mel.default}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ ~~function to do ... ~~ }
 \description{
   ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-is.seglist(object)
+\method{mel}{default}(a)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{object}{ ~~Describe \code{object} here~~ }
+  \item{a}{ ~~Describe \code{a} here~~ }
 }
 \details{
   ~~ If necessary, more details than the description above ~~
@@ -35,7 +35,7 @@ is.seglist(object)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-"is.seglist"
+"mel.default"
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
