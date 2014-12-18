@@ -9,7 +9,7 @@ Description: Provides an interface to the Emu speech database system and
         many special purpose functions for display and analysis of speech 
         data. 
 License: GPL (>= 2)
-Depends: R (>= 2.13),
+Depends: R (>= 2.13)
 Imports:
 	stats, 
 	methods, 
