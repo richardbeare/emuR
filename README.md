@@ -13,4 +13,25 @@ on new versions of R, and this is the repo that will contain the necessary updat
 
 ## Installation
 
-via devtools
+The base emu package for windows includes tcl stuff that is called
+from R. It seems that this is all based around the 32 bit ActiveState
+tcl, which conflicts with the versions distributed with R. There may
+be a better way, but this works.
+
+Start R (32 bit) with
+
+``` bash
+MY_TCLTK=c:/Programs/Emu2.3/bin
+```
+
+Install emuR:
+
+```r
+devtools::install_github("richardbeare/emuR/emu", refs="rchecks")
+```
+test whether R emu is happy
+
+```r
+libray(emu)
+emulink()
+```
