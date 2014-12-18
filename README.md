@@ -23,6 +23,7 @@ Start R (32 bit) with
 ``` bash
 MY_TCLTK=c:/Programs/Emu2.3/bin
 ```
+as a command line object (right-click and select properties)
 
 Install emuR:
 
