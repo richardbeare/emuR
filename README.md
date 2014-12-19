@@ -28,7 +28,7 @@ as a command line object (right-click and select properties)
 Install emuR:
 
 ```r
-devtools::install_github("richardbeare/emuR/emu", refs="rchecks")
+devtools::install_github("richardbeare/emuR/emu", ref="rchecks", args="--no-multiarch)
 ```
 test whether R emu is happy
 
