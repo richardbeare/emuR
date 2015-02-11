@@ -134,7 +134,7 @@ is.seglist <- function(object) {
   print.data.frame(x, ...)
 }
 
-"[.emusegs"<- function(segs,i,j)
+"[.emusegs"<- function(segs,i,j,drop=FALSE)
 {
   NextMethod("[",drop=FALSE)
 }
