@@ -34,7 +34,7 @@
 
 
 "[.trackdata" <-
-  function (dataset, i, j, ...) 
+  function (dataset, i, j, drop=FALSE, ...) 
 {
 
 
